@@ -1,0 +1,71 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.editor-section, .previewer-section {
+  width: 500px;
+  height: 300px;
+  outline: black 1px solid;
+  overflow: scroll;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.full-screen {
+  width: 80vw;
+  height: 90vh;
+  outline: black 1px solid;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.no-content {
+  display: none
+}
+
+textarea {
+  color: black;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+
+.markdown-text {
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding: 0px 8px;
+  background-color: aqua;
+  text-align: start;
+  scroll-behavior: auto;
+}
+
+.title-bar {
+  color: black;
+  padding: 0px 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  outline: black 1px solid;
+  background-color: rgb(2, 209, 209);
+}
+
+button {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+}
