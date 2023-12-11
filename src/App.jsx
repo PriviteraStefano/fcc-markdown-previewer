@@ -51,7 +51,7 @@ And here. | Okay. | I think we get it.
 1. And last but not least, let's not forget embedded images:
 
 ![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
-`
+`;
 
 function App() {
   const [markdownText, setMarkdownText] = useState(defaultMarkdown);
@@ -76,7 +76,9 @@ function App() {
               toggle === "editor" ? setToggle(0) : setToggle("editor");
             }}
           >
-            <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} />
+            <FontAwesomeIcon
+              icon={toggle === 0 ? faUpRightAndDownLeftFromCenter : faMinimize}
+            />
           </button>
         </div>
         <textarea
